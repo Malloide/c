@@ -3,7 +3,7 @@
  int main ()  {
    int numero, original, invertido = 0, digito;
 
-   printf("ingrese un numero cualquiera: \t");
+   printf("ingrese un numero cualquiera: \n");
    scanf("%d", &numero);
 
    original = numero; 
@@ -15,11 +15,10 @@
       numero = numero / 10;
    }
    
-   if (numero == invertido)
-   {
-      printf("%d es un numero capicua\n", original);
-   }else {
-      printf("%d no es un numero capicua\n", original);
-   }
+   if (original == invertido) {
+        printf("%d es un número capicúa\n", original);
+    } else {
+        printf("%d no es un número capicúa\n", original);
+    }
    return 0;
  }
