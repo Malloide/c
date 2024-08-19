@@ -22,7 +22,21 @@ int main() {
         edad--;
     }
 
+    char *estacion;
+    if (mesNacimiento >= 12 || mesNacimiento <= 2) {
+        estacion = "verano";
+    }else if (mesNacimiento >=3 && mesNacimiento <= 5 ){
+        estacion = "otoño";
+    }else if (mesNacimiento >= 6 && mesNacimiento <=8){
+        estacion = "invierno";
+    } else {
+        estacion = "primavera";
+    }
+    
+    
+
     printf("Tu edad es %d años\n", edad);
+    printf("tu estacion es %s\n", estacion);
 
     return 0;
 }
